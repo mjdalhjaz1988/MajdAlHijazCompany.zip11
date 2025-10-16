@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c5aa0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3d6f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00a085;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#skyGradient)"/>
+  
+  <!-- Floating Elements -->
+  <g opacity="0.3">
+    <circle cx="100" cy="80" r="20" fill="rgba(255,255,255,0.2)">
+      <animate attributeName="cy" values="80;60;80" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="120" r="15" fill="rgba(255,255,255,0.15)">
+      <animate attributeName="cy" values="120;100;120" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="50" cy="200" r="10" fill="rgba(255,255,255,0.1)">
+      <animate attributeName="cy" values="200;180;200" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Main Building Complex -->
+  <g transform="translate(300,200)">
+    <!-- Central Tower -->
+    <rect x="-30" y="-120" width="60" height="140" fill="url(#buildingGradient)" rx="5" filter="url(#shadow)"/>
+    
+    <!-- Side Buildings -->
+    <rect x="-80" y="-80" width="40" height="100" fill="rgba(44,90,160,0.8)" rx="3" filter="url(#shadow)"/>
+    <rect x="40" y="-100" width="45" height="120" fill="rgba(44,90,160,0.8)" rx="3" filter="url(#shadow)"/>
+    <rect x="-120" y="-60" width="30" height="80" fill="rgba(44,90,160,0.6)" rx="2" filter="url(#shadow)"/>
+    <rect x="90" y="-70" width="35" height="90" fill="rgba(44,90,160,0.6)" rx="2" filter="url(#shadow)"/>
+    
+    <!-- Windows Pattern -->
+    <g fill="url(#accentGradient)" opacity="0.8">
+      <!-- Central Tower Windows -->
+      <rect x="-20" y="-110" width="8" height="12" rx="1"/>
+      <rect x="-5" y="-110" width="8" height="12" rx="1"/>
+      <rect x="10" y="-110" width="8" height="12" rx="1"/>
+      
+      <rect x="-20" y="-90" width="8" height="12" rx="1"/>
+      <rect x="-5" y="-90" width="8" height="12" rx="1"/>
+      <rect x="10" y="-90" width="8" height="12" rx="1"/>
+      
+      <rect x="-20" y="-70" width="8" height="12" rx="1"/>
+      <rect x="-5" y="-70" width="8" height="12" rx="1"/>
+      <rect x="10" y="-70" width="8" height="12" rx="1"/>
+      
+      <rect x="-20" y="-50" width="8" height="12" rx="1"/>
+      <rect x="-5" y="-50" width="8" height="12" rx="1"/>
+      <rect x="10" y="-50" width="8" height="12" rx="1"/>
+      
+      <!-- Side Building Windows -->
+      <rect x="-70" y="-70" width="6" height="8" rx="1"/>
+      <rect x="-58" y="-70" width="6" height="8" rx="1"/>
+      <rect x="-70" y="-55" width="6" height="8" rx="1"/>
+      <rect x="-58" y="-55" width="6" height="8" rx="1"/>
+      
+      <rect x="50" y="-90" width="6" height="8" rx="1"/>
+      <rect x="62" y="-90" width="6" height="8" rx="1"/>
+      <rect x="50" y="-75" width="6" height="8" rx="1"/>
+      <rect x="62" y="-75" width="6" height="8" rx="1"/>
+      <rect x="50" y="-60" width="6" height="8" rx="1"/>
+      <rect x="62" y="-60" width="6" height="8" rx="1"/>
+    </g>
+    
+    <!-- Rooftop Elements -->
+    <rect x="-15" y="-130" width="30" height="8" fill="url(#accentGradient)" rx="2"/>
+    <circle cx="0" cy="-135" r="3" fill="#ff6b6b" filter="url(#glow)"/>
+  </g>
+  
+  <!-- Digital Elements -->
+  <g transform="translate(150,150)">
+    <!-- Laptop/Screen -->
+    <rect x="0" y="0" width="120" height="80" fill="#2c3e50" rx="5" filter="url(#shadow)"/>
+    <rect x="5" y="5" width="110" height="60" fill="url(#screenGradient)" rx="2"/>
+    
+    <!-- Screen Content -->
+    <rect x="15" y="15" width="90" height="8" fill="rgba(255,255,255,0.8)" rx="2"/>
+    <rect x="15" y="28" width="70" height="6" fill="rgba(255,255,255,0.6)" rx="1"/>
+    <rect x="15" y="38" width="80" height="6" fill="rgba(255,255,255,0.6)" rx="1"/>
+    <rect x="15" y="48" width="60" height="6" fill="rgba(255,255,255,0.6)" rx="1"/>
+    
+    <!-- Laptop Base -->
+    <ellipse cx="60" cy="85" rx="65" ry="8" fill="#34495e"/>
+    
+    <!-- Floating Icons -->
+    <g opacity="0.8">
+      <circle cx="-20" cy="-10" r="8" fill="url(#accentGradient)" filter="url(#glow)">
+        <animate attributeName="cy" values="-10;-20;-10" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="-25" y="-15" width="10" height="10" fill="white" rx="1" opacity="0.8"/>
+      
+      <circle cx="140" cy="10" r="6" fill="#ff6b6b" filter="url(#glow)">
+        <animate attributeName="cy" values="10;0;10" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <polygon points="137,7 143,7 140,13" fill="white" opacity="0.8"/>
+      
+      <circle cx="-10" cy="100" r="7" fill="#4ecdc4" filter="url(#glow)">
+        <animate attributeName="cy" values="100;90;100" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="-13" y="97" width="6" height="6" fill="white" rx="1" opacity="0.8"/>
+    </g>
+  </g>
+  
+  <!-- Mobile Device -->
+  <g transform="translate(450,180)">
+    <rect x="0" y="0" width="60" height="100" fill="#2c3e50" rx="8" filter="url(#shadow)"/>
+    <rect x="5" y="10" width="50" height="70" fill="url(#screenGradient)" rx="3"/>
+    <circle cx="30" cy="90" r="4" fill="#34495e"/>
+    
+    <!-- Screen Content -->
+    <rect x="10" y="15" width="40" height="6" fill="rgba(255,255,255,0.8)" rx="1"/>
+    <rect x="10" y="25" width="30" height="4" fill="rgba(255,255,255,0.6)" rx="1"/>
+    <rect x="10" y="32" width="35" height="4" fill="rgba(255,255,255,0.6)" rx="1"/>
+    
+    <!-- App Icons -->
+    <rect x="12" y="45" width="8" height="8" fill="url(#accentGradient)" rx="2"/>
+    <rect x="25" y="45" width="8" height="8" fill="#ff6b6b" rx="2"/>
+    <rect x="38" y="45" width="8" height="8" fill="#4ecdc4" rx="2"/>
+    
+    <rect x="12" y="58" width="8" height="8" fill="#9b59b6" rx="2"/>
+    <rect x="25" y="58" width="8" height="8" fill="#e74c3c" rx="2"/>
+    <rect x="38" y="58" width="8" height="8" fill="#2ecc71" rx="2"/>
+  </g>
+  
+  <!-- Connection Lines -->
+  <g stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M 210 190 Q 250 170 270 180" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" values="0;10" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 270 220 Q 350 200 420 210" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" values="0;10" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 180 120 Q 220 100 260 120" stroke-dasharray="3,3">
+      <animate attributeName="stroke-dashoffset" values="0;6" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Data Particles -->
+  <g fill="rgba(255,255,255,0.6)">
+    <circle cx="200" cy="100" r="2">
+      <animate attributeName="cx" values="200;400;200" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="150" r="1.5">
+      <animate attributeName="cx" values="350;150;350" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="120" r="2">
+      <animate attributeName="cx" values="400;200;400" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Cloud Elements -->
+  <g transform="translate(100,50)" opacity="0.3">
+    <ellipse cx="0" cy="0" rx="25" ry="15" fill="rgba(255,255,255,0.4)"/>
+    <ellipse cx="15" cy="-5" rx="20" ry="12" fill="rgba(255,255,255,0.4)"/>
+    <ellipse cx="-10" cy="-3" rx="18" ry="10" fill="rgba(255,255,255,0.4)"/>
+  </g>
+  
+  <g transform="translate(480,60)" opacity="0.2">
+    <ellipse cx="0" cy="0" rx="30" ry="18" fill="rgba(255,255,255,0.4)"/>
+    <ellipse cx="18" cy="-6" rx="25" ry="15" fill="rgba(255,255,255,0.4)"/>
+    <ellipse cx="-12" cy="-4" rx="22" ry="12" fill="rgba(255,255,255,0.4)"/>
+  </g>
+</svg>

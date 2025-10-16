@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مجد الحجاز الرقمية للخدمات العامة | Majd Al-Hijaz Digital General Services Company</title>
+    <meta name="description" content="مجد الحجاز الرقمية للخدمات العامة - شركة ذات مسؤولية محدودة تقدم خدمات رقمية متميزة، تطوير المواقع، التسويق الرقمي، الاستشارات التقنية في المملكة العربية السعودية">
+    <meta name="keywords" content="مجد الحجاز، خدمات عامة، تطوير مواقع، تسويق رقمي، استشارات تقنية، السعودية، شركة تقنية، حلول رقمية">
+    <meta name="author" content="مجد الحجاز الرقمية للخدمات العامة">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="مجد الحجاز الرقمية للخدمات العامة">
+    <meta property="og:description" content="شركة ذات مسؤولية محدودة تقدم خدمات رقمية متميزة في المملكة العربية السعودية">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:8000">
+    <meta property="og:image" content="http://localhost:8000/assets/images/logo.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="مجد الحجاز الرقمية للخدمات العامة">
+    <meta name="twitter:description" content="شركة ذات مسؤولية محدودة تقدم خدمات رقمية متميزة">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="http://localhost:8000">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "مجد الحجاز الرقمية للخدمات العامة",
+        "alternateName": "Majd Al-Hijaz Digital General Services Company",
+        "url": "http://localhost:8000",
+        "logo": "http://localhost:8000/assets/images/logo.svg",
+        "description": "شركة ذات مسؤولية محدودة تقدم خدمات رقمية متميزة في المملكة العربية السعودية",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "SA",
+            "addressRegion": "المملكة العربية السعودية"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+966533930001",
+            "contactType": "customer service",
+            "email": "mjdalhjaz@gmail.com"
+        },
+        "sameAs": [
+            "https://wa.me/966533930001"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/images/logo.svg" alt="مجد الحجاز" class="logo">
+                    <span class="company-name" data-ar="مجد الحجاز" data-en="Majd Al-Hijaz">مجد الحجاز</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-ar="من نحن" data-en="About Us">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link" data-ar="خدماتنا" data-en="Our Services">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="lang-toggle" onclick="toggleLanguage()">
+                        <i class="fas fa-globe"></i>
+                        <span id="lang-text">EN</span>
+                    </button>
+                    <button class="nav-toggle" onclick="toggleMenu()">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-ar="شركة مجد الحجاز الرقمية للخدمات العامة" data-en="Majd Al-Hijaz Digital General Services Company">شركة مجد الحجاز الرقمية للخدمات العامة</h1>
+                <p class="hero-subtitle" data-ar="نقدم حلولاً رقمية متطورة وخدمات عامة متميزة لتلبية احتياجاتكم" data-en="We provide advanced digital solutions and exceptional general services to meet your needs">نقدم حلولاً رقمية متطورة وخدمات عامة متميزة لتلبية احتياجاتكم</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary" data-ar="اكتشف خدماتنا" data-en="Discover Our Services">اكتشف خدماتنا</a>
+                    <a href="#contact" class="btn btn-secondary" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/hero-illustration.svg" alt="Digital Services" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="من نحن" data-en="About Us">من نحن</h2>
+                <p class="section-subtitle" data-ar="تعرف على شركة مجد الحجاز وقيمنا" data-en="Learn about Majd Al-Hijaz and our values">تعرف على شركة مجد الحجاز وقيمنا</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-ar="شركة ذات مسؤولية محدودة (شخص واحد)" data-en="Limited Liability Company (Single Person)">شركة ذات مسؤولية محدودة (شخص واحد)</h3>
+                    <div class="company-info">
+                        <div class="info-item">
+                            <strong data-ar="الرقم الوطني الموحد:" data-en="Unified National Number:">الرقم الوطني الموحد:</strong>
+                            <span>7032936473</span>
+                        </div>
+                        <div class="info-item">
+                            <strong data-ar="تاريخ الإصدار:" data-en="Issue Date:">تاريخ الإصدار:</strong>
+                            <span>18/03/2023</span>
+                        </div>
+                        <div class="info-item">
+                            <strong data-ar="نوع الكيان:" data-en="Entity Type:">نوع الكيان:</strong>
+                            <span data-ar="شركة ذات مسؤولية محدودة" data-en="Limited Liability Company">شركة ذات مسؤولية محدودة</span>
+                        </div>
+                    </div>
+                    <p data-ar="نحن في شركة مجد الحجاز نسعى لتقديم أفضل الخدمات الرقمية والعامة بجودة عالية ومعايير احترافية تلبي تطلعات عملائنا وتحقق رؤيتنا في التميز والابتكار." data-en="At Majd Al-Hijaz Company, we strive to provide the best digital and general services with high quality and professional standards that meet our clients' expectations and achieve our vision of excellence and innovation.">نحن في شركة مجد الحجاز نسعى لتقديم أفضل الخدمات الرقمية والعامة بجودة عالية ومعايير احترافية تلبي تطلعات عملائنا وتحقق رؤيتنا في التميز والابتكار.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <i class="fas fa-award"></i>
+                        <h4 data-ar="الجودة" data-en="Quality">الجودة</h4>
+                        <p data-ar="نلتزم بأعلى معايير الجودة في جميع خدماتنا" data-en="We commit to the highest quality standards in all our services">نلتزم بأعلى معايير الجودة في جميع خدماتنا</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-rocket"></i>
+                        <h4 data-ar="الابتكار" data-en="Innovation">الابتكار</h4>
+                        <p data-ar="نستخدم أحدث التقنيات والحلول المبتكرة" data-en="We use the latest technologies and innovative solutions">نستخدم أحدث التقنيات والحلول المبتكرة</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-handshake"></i>
+                        <h4 data-ar="الثقة" data-en="Trust">الثقة</h4>
+                        <p data-ar="نبني علاقات طويلة الأمد مع عملائنا" data-en="We build long-term relationships with our clients">نبني علاقات طويلة الأمد مع عملائنا</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="خدماتنا" data-en="Our Services">خدماتنا</h2>
+                <p class="section-subtitle" data-ar="نقدم مجموعة شاملة من الخدمات الرقمية والعامة" data-en="We offer a comprehensive range of digital and general services">نقدم مجموعة شاملة من الخدمات الرقمية والعامة</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 data-ar="تطوير المواقع الإلكترونية" data-en="Website Development">تطوير المواقع الإلكترونية</h3>
+                    <p data-ar="تصميم وتطوير مواقع إلكترونية احترافية ومتجاوبة مع جميع الأجهزة" data-en="Design and develop professional, responsive websites for all devices">تصميم وتطوير مواقع إلكترونية احترافية ومتجاوبة مع جميع الأجهزة</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 data-ar="تطبيقات الهاتف المحمول" data-en="Mobile Applications">تطبيقات الهاتف المحمول</h3>
+                    <p data-ar="تطوير تطبيقات ذكية لأنظمة iOS و Android بتقنيات حديثة" data-en="Develop smart applications for iOS and Android systems with modern technologies">تطوير تطبيقات ذكية لأنظمة iOS و Android بتقنيات حديثة</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 data-ar="الحلول السحابية" data-en="Cloud Solutions">الحلول السحابية</h3>
+                    <p data-ar="خدمات الحوسبة السحابية وإدارة البيانات بأمان عالي" data-en="Cloud computing services and data management with high security">خدمات الحوسبة السحابية وإدارة البيانات بأمان عالي</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 data-ar="التسويق الرقمي" data-en="Digital Marketing">التسويق الرقمي</h3>
+                    <p data-ar="استراتيجيات تسويقية متطورة لزيادة الوصول والمبيعات" data-en="Advanced marketing strategies to increase reach and sales">استراتيجيات تسويقية متطورة لزيادة الوصول والمبيعات</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-ar="الأمن السيبراني" data-en="Cybersecurity">الأمن السيبراني</h3>
+                    <p data-ar="حماية البيانات والأنظمة من التهديدات الإلكترونية" data-en="Protect data and systems from cyber threats">حماية البيانات والأنظمة من التهديدات الإلكترونية</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 data-ar="الاستشارات التقنية" data-en="Technical Consulting">الاستشارات التقنية</h3>
+                    <p data-ar="استشارات متخصصة في التكنولوجيا والتحول الرقمي" data-en="Specialized consulting in technology and digital transformation">استشارات متخصصة في التكنولوجيا والتحول الرقمي</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2>
+                <p class="section-subtitle" data-ar="نحن هنا لمساعدتك وتقديم أفضل الحلول" data-en="We are here to help you and provide the best solutions">نحن هنا لمساعدتك وتقديم أفضل الحلول</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</h4>
+                            <p><a href="mailto:mjdalhjaz@gmail.com">mjdalhjaz@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-ar="الهاتف" data-en="Phone">الهاتف</h4>
+                            <p><a href="tel:+966533930001">+966533930001</a></p>
+                            <p><a href="tel:+201092000092">+201092000092</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4 data-ar="واتساب" data-en="WhatsApp">واتساب</h4>
+                            <p><a href="https://wa.me/966533930001" target="_blank" class="whatsapp-link" data-ar="تواصل عبر واتساب" data-en="Contact via WhatsApp">تواصل عبر واتساب</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-ar="العنوان" data-en="Address">العنوان</h4>
+                            <p data-ar="المملكة العربية السعودية" data-en="Kingdom of Saudi Arabia">المملكة العربية السعودية</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="submitForm(event)">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name" data-ar="الاسم" data-en="Name">الاسم</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone">
+                        <label for="phone" data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message" data-ar="الرسالة" data-en="Message">الرسالة</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.svg" alt="مجد الحجاز" class="logo">
+                        <span class="company-name" data-ar="مجد الحجاز" data-en="Majd Al-Hijaz">مجد الحجاز</span>
+                    </div>
+                    <p data-ar="شركة مجد الحجاز الرقمية للخدمات العامة - نقدم حلولاً رقمية متطورة وخدمات عامة متميزة" data-en="Majd Al-Hijaz Digital General Services Company - We provide advanced digital solutions and exceptional general services">شركة مجد الحجاز الرقمية للخدمات العامة - نقدم حلولاً رقمية متطورة وخدمات عامة متميزة</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                        <li><a href="#about" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                        <li><a href="#services" data-ar="خدماتنا" data-en="Our Services">خدماتنا</a></li>
+                        <li><a href="#contact" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-ar="معلومات الشركة" data-en="Company Info">معلومات الشركة</h4>
+                    <ul>
+                        <li data-ar="الرقم الوطني: 7032936473" data-en="National Number: 7032936473">الرقم الوطني: 7032936473</li>
+                        <li data-ar="تاريخ الإصدار: 18/03/2023" data-en="Issue Date: 18/03/2023">تاريخ الإصدار: 18/03/2023</li>
+                        <li data-ar="شركة ذات مسؤولية محدودة" data-en="Limited Liability Company">شركة ذات مسؤولية محدودة</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-ar="تابعنا" data-en="Follow Us">تابعنا</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-ar="© 2023 شركة مجد الحجاز الرقمية للخدمات العامة. جميع الحقوق محفوظة." data-en="© 2023 Majd Al-Hijaz Digital General Services Company. All rights reserved.">© 2023 شركة مجد الحجاز الرقمية للخدمات العامة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js')
+                    .then(registration => {
+                        console.log('تم تسجيل Service Worker بنجاح:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('فشل في تسجيل Service Worker:', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
